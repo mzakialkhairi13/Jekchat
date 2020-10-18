@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "754933837856",
+    "firebase_url": "https://jekchat-47a4a.firebaseio.com",
+    "project_id": "jekchat-47a4a",
+    "storage_bucket": "jekchat-47a4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754933837856:android:68ba5d16682000d73d4c45",
+        "android_client_info": {
+          "package_name": "com.mzakialkhairi.jekchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754933837856-2um4v0c5ro036alrsmqssg4k395kd33a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mzakialkhairi.jekchat",
+            "certificate_hash": "fe5272db23f3391b4cff4a0e489ce218abb3db96"
+          }
+        },
+        {
+          "client_id": "754933837856-udan93b9bp8nmikqvn0qap8i17qfbukt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUvX280sxRc84B2wmdKeMwAOrxwYIf2yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754933837856-udan93b9bp8nmikqvn0qap8i17qfbukt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

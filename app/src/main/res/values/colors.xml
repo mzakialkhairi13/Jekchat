@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#040404</color>
+    <color name="colorPrimaryDark">#040404</color>
+    <color name="colorAccent">#05D355</color>
+    <color name="colorAccent2">#6FEBB7</color>
+    <color name="colorProfile">#040404</color>
+
+    <color name="hijauTua">#245A3C</color>
+    <color name="background">#1E1E1E</color>
+
+    <color name="textColor">#FFF</color>
+</resources>

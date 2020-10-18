@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".MessageChatActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/barLayout_message_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_message_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimaryDark"
+                app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image_message_chat"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/profile"/>
+
+                <TextView
+                    android:id="@+id/username_message_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textSize="18sp"
+                    android:layout_marginRight="8dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/verified"
+                    android:layout_width="18dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_verified"
+                    android:layout_marginLeft="16dp"
+                    android:visibility="gone"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_message_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/barLayout_message_chat"
+            android:layout_marginTop="8dp"
+            android:layout_above="@id/relative_bottom">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <RelativeLayout
+            android:id="@+id/relative_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="8dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/attach_image_file"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_attachment"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"/>
+
+            <EditText
+                android:id="@+id/text_message_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Insert message here..."
+                android:textColor="@android:color/white"
+                android:background="@android:color/transparent"
+                android:textColorHint="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/attach_image_file"
+                android:layout_toLeftOf="@id/btn_send_mesaage"
+                android:layout_marginLeft="8dp" />
+
+            <ImageView
+                android:id="@+id/btn_send_mesaage"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_send"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>
+
